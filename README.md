@@ -1,11 +1,11 @@
-# Go Users API 🚀
+# Go Users API 
 
 A RESTful backend service built with **Go (Golang)** and **Fiber** to manage users with their Date of Birth (DOB).  
 The API dynamically calculates and returns the user’s age when fetching data.
 
 ---
 
-## 📌 Features
+##  Features
 
 - Create, Read, Update, Delete (CRUD) users
 - Store Date of Birth in database
@@ -17,7 +17,7 @@ The API dynamically calculates and returns the user’s age when fetching data.
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 go-users-api/
 ├── cmd/
@@ -51,7 +51,7 @@ Copy code
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **Go (Golang)**
 - **Fiber** – Web framework
@@ -61,7 +61,7 @@ Copy code
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ```sql
 CREATE TABLE users (
@@ -79,12 +79,12 @@ DB_PASSWORD=root
 DB_HOST=localhost
 DB_PORT=3306
 DB_NAME=usersdb
-▶️ Run the Application
-1️⃣ Install dependencies
+ Run the Application
+1️Install dependencies
 bash
 Copy code
 go mod tidy
-2️⃣ Start the server
+Start the server
 bash
 Copy code
 go run cmd/server/main.go
@@ -93,8 +93,8 @@ Server will run at:
 arduino
 Copy code
 http://localhost:8080
-🔄 API Endpoints
-➕ Create User
+API Endpoints
+Create User
 POST /users
 
 json
@@ -113,7 +113,7 @@ Copy code
   "dob": "1990-05-10",
   "age": 34
 }
-📄 Get User by ID
+Get User by ID
 GET /users/:id
 
 json
@@ -124,7 +124,7 @@ Copy code
   "dob": "1990-05-10",
   "age": 34
 }
-📋 List All Users
+List All Users
 GET /users
 
 json
@@ -137,7 +137,7 @@ Copy code
     "age": 34
   }
 ]
-✏️ Update User
+Update User
 PUT /users/:id
 
 json
@@ -146,7 +146,7 @@ Copy code
   "name": "Alice Updated",
   "dob": "1991-03-15"
 }
-❌ Delete User
+ Delete User
 DELETE /users/:id
 
 Response
@@ -154,7 +154,7 @@ Response
 css
 Copy code
 204 No Content
-🧠 Age Calculation Logic
+Age Calculation Logic
 go
 Copy code
 func CalculateAge(dob time.Time) int {
@@ -167,7 +167,7 @@ func CalculateAge(dob time.Time) int {
     }
     return age
 }
-👩‍💻 Author
+Author
 Srinithi A
 GitHub: https://github.com/srinithiashoka
 
@@ -176,9 +176,10 @@ Copy code
 
 ---
 
-## ✅ FINAL COMMANDS (RUN NOW)
+## FINAL COMMANDS (RUN NOW)
 
 ```bash
 git add README.md
 git commit -m "Fix README formatting"
 git push
+
